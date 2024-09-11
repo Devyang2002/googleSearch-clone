@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images:{
+        remotePatterns:[
+            {
+                protocol: 'https',
+                hostname: 'cdn.logojoy.com',
+                pathname: '**',
+            },
+        ],
+    },
+};
 
 export default nextConfig;
